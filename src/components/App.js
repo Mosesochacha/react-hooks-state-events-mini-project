@@ -39,18 +39,9 @@ function App() {
 	return (
 		<div className="App">
 			<h2>My tasks</h2>
-			<CategoryFilter 
-				 categories={categories}
-				 click={selected}
-			/>
-			<NewTaskForm 
-				categories={CATEGORIES}
-				onTaskFormSubmit={onTaskFormSubmit}
-			/>
-			<TaskList 
-				tasks={list}
-				click={deleted}
-			/>
+			<CategoryFilter categories={categories} click={selected} />
+			<NewTaskForm categories={CATEGORIES} onTaskFormSubmit={onTaskFormSubmit} />
+			<TaskList tasks={list} click={deleted} />
 		</div>
 	);
 }

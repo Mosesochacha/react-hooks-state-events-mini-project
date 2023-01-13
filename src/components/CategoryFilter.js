@@ -3,12 +3,7 @@ import React from "react";
 function CategoryFilter({categories,click}) {
   const buttons = categories.map((category, ind) => {
     return (
-      <button
-        key={ind}
-        className={category}
-        onClick={() => click(category)}
-      >{category}
-      </button>
+      <button key={ind} className={category} onClick={() => click(category)} >{category} </button>
     )
   });
   return (

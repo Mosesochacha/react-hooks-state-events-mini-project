@@ -28,12 +28,7 @@ function NewTaskForm({onTaskFormSubmit, categories}) {
       </label>
       <label>
         Category
-        <select name="category" >
-          {/* render <option> elements for each category here */}
-          {/* {categories.map((category)=>(
-            <option key={category}>{category}</option>
-          ))} */}
-          {newArr}
+        <select name="category" >{newArr}
         </select>
       </label>
       <input type="submit" value="Add task" />
